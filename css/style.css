@@ -1,0 +1,102 @@
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card--container {
+    display: flex;
+}
+
+.cart--content {
+    width: 220px;
+    height: 390px;
+    padding: 20px 25px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 6px 0px 10px -3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 0px 10px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 0px 10px -3px rgba(0, 0, 0, 0.75);
+}
+
+.header-title h2 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 30px;
+}
+
+.description p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 14px;
+    width: 78%;
+    transform: translateY(-30%);
+}
+
+.cart--content:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.cart--content:nth-child(2) {
+    background-color: hsl(184, 100%, 22%)
+}
+
+.cart--content:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.button--action .btn {
+    background: #fff;
+    text-transform: capitalize;
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.button--action.sedans .btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.button--action.suvs .btn {
+    color: hsl(184, 100%, 22%)
+}
+
+.button--action.luxury .btn {
+    color: hsl(179, 100%, 13%)
+}
+
+.button--action .btn:hover {
+    background: transparent;
+    color: #fff;
+}
+@media(max-width:767px){
+    .card {
+       flex-direction: column;
+       justify-content: center;
+    }
+    .card--container {
+        flex-direction: column;
+        height: 100%;
+    }
+    .cart--content{
+        border-radius: 0;
+        box-shadow: none;
+    }
+   
+}
